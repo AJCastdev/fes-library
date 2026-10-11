@@ -223,11 +223,11 @@ FEATURES
 #features {
   padding-top: 8vh;
   background-color: rgba(115, 66, 214, 0.1);
-  
 }
 
 .books {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .book {
@@ -237,7 +237,8 @@ FEATURES
 
 .book__img {
   max-height: 380px;
-  transition:  all 300ms ease;
+  transition: all 300ms ease;
+  cursor: no-drop;
 }
 
 .book__img--wrapper {
@@ -247,6 +248,55 @@ FEATURES
   display: flex;
 }
 
-.book:hover .book__img--wrapper {
+.book:hover .book__img {
   transform: scale(1.03);
+}
+
+.book__title {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.book__title:hover {
+  text-decoration: underline;
+  cursor: not-allowed;
+}
+
+.book__ratings {
+  margin-bottom: 8px;
+  color: #fabf2a;
+}
+
+.book__price--normal {
+  text-decoration: line-through;
+  padding-right: 6px;
+  color: #bfbfbf;
+}
+
+/* 
+
+EXPLORE
+
+*/
+
+
+.section__button {
+  padding: 8px;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #7342d6;
+  color: white;
+}
+
+.section__button:hover {
+  transform: scale(1.03);
+}
+
+.explore {
+  background-color: rgba(115, 66, 214, 0.1);
 }
