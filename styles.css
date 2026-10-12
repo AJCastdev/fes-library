@@ -297,6 +297,6 @@ EXPLORE
   transform: scale(1.03);
 }
 
-.explore {
+#explore {
   background-color: rgba(115, 66, 214, 0.1);
 }
