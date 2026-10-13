@@ -243,8 +243,15 @@ FEATURES
 */
 
 #features {
-  padding-top: 8vh;
+  padding-top: 14vh;
   background-color: rgba(115, 66, 214, 0.1);
+  /* position: relative; */
+  /* z-index: 2; */
+}
+
+#features .section__title {
+  position: relative;
+  z-index: 2;
 }
 
 .books {
@@ -319,7 +326,7 @@ footer {
   display: flex;
 }
 
-.foter__logo--img {
+.footer__logo--img {
   width: 160px;
   filter: grayscale(1) invert(1);
 }
