@@ -66,6 +66,16 @@ ul {
   list-style-type: none;
 }
 
+li {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 8px; */
+  /* width: auto; */
+  /* margin: 20px 0; */
+  position: relative;
+
+}
+
 .nav__link {
   margin-left: 16px;
   text-decoration: none;
